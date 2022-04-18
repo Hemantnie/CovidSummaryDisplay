@@ -1,12 +1,24 @@
 <div class="container">
-    <div class="header"></div>
+    <div class="header">Covid Summary</div>
     <div class="body">
+        <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '10px',primaryColour: 'green',secondaryColour:'green',tertiaryColour:'green'}"></ngx-loading>
+    <div class="global-data" *ngIf="globalData">
+        <div class="items">
+            <div class="newConfirmed">New Confirmed : {{globalData.NewConfirmed}}</div>
+            <div class="totalConfirmed">Total Confirmed : {{globalData.TotalConfirmed}}</div>
+            <div class="newDeaths">New Deaths : {{globalData.NewDeaths}}</div>
+            <div class="totalDeaths">Total Deaths : {{globalData.TotalDeaths}}</div>
+            <div class="newRecovered">New Recovered : {{globalData.NewRecovered}}</div>
+            <div class="totalRecovered">Total Recovered : {{globalData.TotalRecovered}}</div>
+        </div>
+    </div>
+    <div class="country-data">
         <ag-grid-angular
-    style="width: 100%; height: 800px;"
-    class="ag-theme-alpine"
-    [rowData]="rowData"
-    [columnDefs]="columnDefs"
->
-</ag-grid-angular>
+        style="width: 1405px; height: 800px;"
+        class="ag-theme-balham"
+        [rowData]="rowData"
+        [columnDefs]="columnDefs">
+        </ag-grid-angular>
+    </div>
     </div>
 </div>
