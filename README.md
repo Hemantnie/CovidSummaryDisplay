@@ -1,27 +1,18 @@
-# CovidSummary
+# Welcome to CovidSummary Project By Hemant!
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+This is a sample project for Intuit code-craft assignment.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Problem Statement
 
-## Code scaffolding
+Create an application which will fetch Covid data from the **API** [https://api.covid19api.com/summary](https://api.covid19api.com/summary) and first show the global summary in one section and show a tabular data of all the countries in another section. The table should be sortable and filterable by any of the columns. Columns should be Country Name, New Confirmed, Total Confirmed, New Deaths, Total Deaths, New Recovered and Total Recovered. Also add a refresh button on the which will reload the data from the API without page reload.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Frameworks
 
-## Build
+ - Angular 11
+ - Javascript
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Libraries
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ - Ag-grid
+ - Bootstart
